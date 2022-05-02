@@ -36,8 +36,8 @@
                     <ul>
                         <li class="active">About the shelter</li>
                         <li>Our pets</li>
-                        <li>Help the shelter</li>
-                        <li>Contacts</li>
+                        <a class="li" href="#help-section">Help the shelter</a>
+                        <a class="li" href="#footer-section">Contacts</a>
                     </ul>
                 </nav>
             </header>
@@ -50,9 +50,9 @@
                                  He or she will love you more than anybody
                                   else in the world, you will see!
                             </p>
-                             <div class="btn main-btn">
-                                Make a friend
-                             </div>
+                             
+                                <a class="btn main-btn" href="#slider-section">Make a friend</a>
+                             
                         </div>
                         <div class="main-photo" style="background-image: url(../../assets/images/main\ dog.svg);">
         
@@ -92,7 +92,7 @@
     </section>
     <!--about section-->
     <!--slider section-->
-    <section class="slider-section">
+    <section id="slider-section" class="slider-section">
         <div class="container">
             <div class="slider title">
                 <h3>Our friends who
@@ -100,6 +100,7 @@
                 </h3>
             </div>
             <div class="slider-animals">
+                <div class="arrow left" style="background-image: url(../../assets/icons/arrow-left.png);"></div>
                 <div class="animal-info">
                     <div class="animal pet" style="background-image: url(../../assets/images/pets-katrine.svg);">
                     </div>
@@ -130,6 +131,7 @@
                         Learn more
                     </div>
                 </div>
+                <div class="arrow right" style="background-image: url(../../assets/icons/button_arrow.png);"></div>
             </div>
             <div class="btn-center">
                 <div class="btn get-to">
@@ -142,7 +144,7 @@
 
     <!--slider section-->
     <!--help section-->
-    <section class="help-section">
+    <section id="help-section" class="help-section">
         <div class="container">
             <div class="help title">
                 <h3>How you can help
@@ -227,32 +229,33 @@
 
       <!--footer section-->
 
-    <footer class="footer-section" style="background-image: url(../../assets/images/start-screen-gradient-background.svg);">
+    <footer id="footer-section" class="footer-section" style="background-image: url(../../assets/images/start-screen-gradient-background.svg);">
         <div class="container">
             <div class="footer-items">
                 <div class="footer-suggest">
                     <h3>For questions and suggestions</h3>
                     <div class="footer-sort mail">
-                        <div class="mail-icon" style="background-image: url(../../assets/images/mail.svg);">
-                        </div>
+                        <a href="mailto:email@shelter.com" class="mail-icon" style="background-image: url(../../assets/images/mail.svg);">
+                            
+                        </a>
                         <h4>email@shelter.com</h4>
                     </div>
                     <div class="footer-sort call">
-                        <div class="call-icon" style="background-image: url(../../assets/images/phone.svg);">
-                        </div>
+                        <a href="tel:+136745677554" class="call-icon" style="background-image: url(../../assets/images/phone.svg);">
+                        </a>
                         <h4>+13 674 567 75 54</h4>
                     </div>
                 </div>
                 <div class="footer-visit">
                     <h3>We are waiting for your visit</h3>
                     <div class="footer-sort pin">
-                        <div class="pin-icon" style="background-image: url(../../assets/images/pin.svg);">
-                        </div>
+                        <a href="https://goo.gl/maps/KLpGyYjEZJMXWs9D8" class="pin-icon" style="background-image: url(../../assets/images/pin.svg);">
+                        </a>
                         <h4>1 Central Street, Boston (entrance from the store)</h4>
                     </div>
                     <div class="footer-sort pin">
-                        <div class="pin-icon" style="background-image: url(../../assets/images/pin.svg);">
-                        </div>
+                        <a href="https://goo.gl/maps/wikSjHazYZgT4u2R7" class="pin-icon" style="background-image: url(../../assets/images/pin.svg);">
+                        </a>
                         <h4>18 South Park, London </h4>
                 </div>               
             </div>

@@ -9,6 +9,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
+    scroll-behavior: smooth;
     /* src: local('Segoe WP'), url('https://fonts.cdnfonts.com/s/13139/SegoeWP.woff') format('woff'); */
 
 }
@@ -46,6 +47,31 @@
     justify-content: space-around;
     color: #F1CDB3;
     width: 500px;
+}
+.li{
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #CDCDCD;
+}
+.li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:  0.175rem;
+    background-color: #F1CDB3;
+    left: 0;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: 0.3s ease;
+}
+.li:hover::after{
+    transform: scale(1, 1);
+}
+.li:hover{
+    color: #FFFFFF;
 }
 li {
     position: relative;
@@ -193,9 +219,33 @@ h3{
     text-align: center;
 }
 .slider-animals{
+    position: relative;
     display: flex;
     justify-content: space-around;
 
+}
+.arrow{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.arrow:hover{
+    background-color: #F1CDB3;
+}
+.left{
+    top: 50%;
+    left: 0;
+}
+.right{
+    top: 50%;
+    right: 0;
+    
 }
 .animal-info{
     display: flex;
