@@ -9,6 +9,7 @@
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
+    scroll-behavior: smooth;
     /* src: local('Segoe WP'), url('https://fonts.cdnfonts.com/s/13139/SegoeWP.woff') format('woff'); */
 
 }
@@ -144,22 +145,13 @@ h3 {
     width: 52px;
     height: 52px;
     border-radius: 100%;
-    position: absolute;
     cursor: pointer;
     transition: 0.3s ease;
 }
 .arrow:hover{
-    background-color: #F1CDB3;
+    background-color:   #F1CDB3;
 }
-.left{
-    top: 50%;
-    left: 0;
-}
-.right{
-    top: 50%;
-    right: 0;
-    
-}
+
 .animal-info{
     display: flex;
     flex-direction: column;
@@ -187,7 +179,6 @@ h3 {
 .btn {
     width: 207px;
     height: 52px;
-    background-color: #F1CDB3;
     color: #545454;
     border-radius: 100px;
     cursor: pointer;
@@ -196,6 +187,7 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
 .lern-more{
     background-color: #FAFAFA;
     border: solid 2px #FDDCC4;
@@ -211,10 +203,26 @@ h3 {
     justify-content: center;
     padding-top: 60px;
 }
+.heandmade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border:  solid 1px #CDCDCD;
+    color: #CDCDCD;
+}
+.heandmade:hover{
+    border:  solid 1px #F1CDB3;
+    color: #292929;
+}
 .get-to{
-    width: 261px;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
     align-self: center;
 }
+
 
 
 /*--slider section--*/
