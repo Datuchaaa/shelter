@@ -615,7 +615,8 @@ h4{
     }
     .main-photo{
         width: 100%;
-        height: 432px;
+        height: 600px;
+        background-size: 100%;
     }
     .main-info{
         width: 100%;
@@ -639,11 +640,29 @@ h4{
     .arrow{
         display: none;
     }
+    .help-icons{
+        flex-wrap: wrap;
+    }
     .donation-items{
         flex-direction: column;
     }
     .donation-section{
         height: 100%;
+    }
+    .donation-dog{
+        width: 100%;
+        height: 223px;
+        background-size: 100%;
+    }
+    .donation-info{
+        width: 100%;
+        height: 100%;
+    }
+    .donation-info p{
+        width: 300px;
+    }
+    .donation-btn{
+        width: 300px;
     }
     .help-section{
         height: 100%;
