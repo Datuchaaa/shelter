@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/42432c60fd.js" crossorigin="anonymous"></script>
-    <script src='style.css'></script>
-    <script src="script.js"></script>
+    <!-- <script src='style.css'></script> -->
+    
 
 </head> 
 <body>
@@ -33,13 +33,13 @@
                     <p>Shelter for pets in Boston</p>
                 </div>
                 <nav class="nav-bar">
-                    <ul class="nav-menu">
-                        <li class="activated">About the shelter</li>
+                    <ul class="nav-menu" id="navBar">
+                        <li class="activated"><a href="#header"></a> About the shelter</li>
                         <li><a class="li" href="../pets/index.html">Our pets</a></li>
                         <li><a class="li" href="#help-section">Help the shelter</a></li>
                         <li><a class="li" href="#footer-section">Contacts</a></li>
                     </ul>
-                    <div class="hamburger">
+                    <div class="hamburger" id="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
@@ -97,35 +97,42 @@
     </section>
     <!--about section-->
     <!--slider section-->
+    
+
     <section id="slider-section" class="slider-section">
         <div class="container">
-            <div class="slider-popop">
-                
-            </div>
-            <div class="detaled-info Jennufer">
-                <div class="arrow X-icon"><i class="fa-solid fa-xmark"></i></div>
-                <div class="detaled-animal" style="background-image: url(../../assets/images/pets-jennifer.svg);">
+            <div class="slider-details-wrapper">
 
-                </div>
-                <div class="deatled-animal-bio">
-                    <h3>Jennifer</h3>
-                    <h4>Dog - Labrador</h4>
-                    <h5>Jennifer is a sweet 2 months
-                         old Labrador that is patiently
-                          waiting to find a new forever home.
-                           This girl really enjoys being able
-                            to go outside to run and play, 
-                            but won't hesitate to play up
-                          a storm in the house if she has al
-                         of her favorite toys.
-                    </h5>
-                    <div class="age-list">
-                        <div class="age-row"><span>Age:</span> <p> 2 months</p></div>
-                        <div class="age-row"><span>Inoculations:</span> <p> none</p></div>
-                        <div class="age-row"><span>Diseases:</span> <p> none</p></div>
-                        <div class="age-row"><span>Parasites:</span> <p> none</p></div>
+
+                <div class="slider-popop">
+                    <div class="detaled-info Jennufer">
+                        <div class="arrow X-icon"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="detaled-animal" style="background-image: url(../../assets/images/pets-jennifer.svg);">
+            
+                        </div>
+                        <div class="deatled-animal-bio">
+                            <h3>Jennifer</h3>
+                            <h4>Dog - Labrador</h4>
+                            <h5>Jennifer is a sweet 2 months
+                                 old Labrador that is patiently
+                                  waiting to find a new forever home.
+                                   This girl really enjoys being able
+                                    to go outside to run and play, 
+                                    but won't hesitate to play up
+                                  a storm in the house if she has al
+                                 of her favorite toys.
+                            </h5>
+                            <div class="age-list">
+                                <div class="age-row"><span>Age:</span> <p> 2 months</p></div>
+                                <div class="age-row"><span>Inoculations:</span> <p> none</p></div>
+                                <div class="age-row"><span>Diseases:</span> <p> none</p></div>
+                                <div class="age-row"><span>Parasites:</span> <p> none</p></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+               
+        
             </div>
             <div class="slider title">
                 <h3>Our friends who
@@ -174,6 +181,7 @@
         </div>
      
     </section>
+
 
 
     <!--slider section-->
@@ -307,6 +315,6 @@
 
 
 
-     
+     <script src="script.js"></script>
 
 </body>
