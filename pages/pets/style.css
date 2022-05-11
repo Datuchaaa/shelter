@@ -333,6 +333,11 @@ h4 {
         height: 100%;
         padding: 20px;
     }
+    .nav-bar ul{
+        width: 100%;
+        height: 500px;
+        z-index: 2;
+    }
     .main-photo{
         width: 100%;
         height: 432px;
@@ -386,23 +391,23 @@ h4 {
 
     
     }
-    .hamburger.active.bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2){
         opacity: 0;
         
     }
 
-    .hamburger.active.bar:nth-child(1){
+    .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
 
     }
-    .hamburger.active.bar:nth-child(3){
+    .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
         
     }
 
     .nav-menu{
-        position: fixed;
-        right: 100%;
+        position: absolute;
+        right: -100%;
         top: 90px;
         gap: 0;
         flex-direction: column;
