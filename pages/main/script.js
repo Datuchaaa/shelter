@@ -24,11 +24,7 @@ document.querySelectorAll('.nav-link').forEach((value)=>{
         navMenu.classList.toggle("active");
     })
 });
-document.querySelectorAll('.container').forEach((vlll)=>{
-    vlll.addEventListener('click', () =>{
-        // navMenu.remove("active");
-    })
-});
+
 
 
 // document.querySelectorAll(".nav-link").forEach(n => n.

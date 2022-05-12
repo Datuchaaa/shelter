@@ -13,4 +13,12 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     
-})
+});
+
+
+document.querySelectorAll('.nav-link').forEach((value)=>{
+    value.addEventListener('click', ()=>{
+        console.log('click test');
+        navMenu.classList.toggle("active");
+    })
+});
