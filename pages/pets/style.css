@@ -406,7 +406,7 @@ h4 {
     }
 
     .nav-menu{
-        position: absolute;
+        position: fixed;
         right: -100%;
         top: 90px;
         gap: 0;
