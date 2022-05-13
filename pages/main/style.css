@@ -355,7 +355,12 @@ h3{
     height: 435px;
     background-color: #FAFAFA;
     border-radius: 9px;
+    transition: 0.3s;
 
+}
+.animal-info:hover{
+    box-shadow: 11px 1px 17px 7px rgb(0 0 0 / 20%);
+    transform: translateY(-7px);
 }
 .animal{
     width: 270px;
@@ -364,6 +369,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .name{
     color: #545454;
     font-size: medium;

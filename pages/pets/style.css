@@ -176,7 +176,12 @@ h3 {
     background-color: #FAFAFA;
     margin-bottom: 30px;
     border-radius: 9px;
+    transition: 0.3s;
 
+}
+.animal-info:hover{
+    box-shadow: 11px 1px 17px 7px rgb(0 0 0 / 20%);
+    transform: translateY(-7px);
 }
 .animal{
     width: 270px;
