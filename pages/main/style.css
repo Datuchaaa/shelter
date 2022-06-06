@@ -219,6 +219,7 @@ h3{
 /*--slider section--*/
 
 .slider-section{
+    position: relative;
     background-color: #F6F6F6;
     width: 100%;
     height: 877px;
@@ -229,13 +230,14 @@ h3{
 
 /*--POP MESSAGE--*/
 .slider-details-wrapper{
-    display: none;
-    position: relative;
+    display: block;
+    position: fixed;
+    bottom: 100%;
     z-index: 1;
 }
 
-.slider-popop{
-    display: flex;
+.slider-popup{
+    display: none;
     position: absolute;
     width: 1280px;
     height: 877px;
@@ -245,7 +247,6 @@ h3{
 }
 .detaled-info{
     display: flex;
-    position: relative;
     left: 15%;
     top: 20%;
     border-radius: 9px;
@@ -339,7 +340,7 @@ h3{
 }
 .left{
     top: 50%;
-    left: 0;
+    left: -70px;
 }
 .right{
     top: 50%;
@@ -362,6 +363,8 @@ h3{
     box-shadow: 11px 1px 17px 7px rgb(0 0 0 / 20%);
     transform: translateY(-7px);
 }
+
+
 .animal{
     width: 270px;
     height: 270px;
@@ -619,9 +622,19 @@ h4{
     .container{
         width: 100%;
     }
+
+    .slider-details-wrapper{
+        width: 200px;
+    }
+    .slider-popup{
+        width: 200px;
+    }
     .nav-bar ul{
         width: 100%;
-        height: 500px;
+        height: 100%;
+        z-index: 2;
+        display: grid;
+        grid-template-rows: 60px 60px 60px;
     }
     .header-section{
         height: 100%;
@@ -649,8 +662,18 @@ h4{
     .slider-section{
         height: 100%;
     }
+    .slider-section h3 {
+        height: 100%;
+    }
     .slider-animals{
         flex-direction: column;
+    }
+    .animal-info{
+        width: 100%;
+        height: 100%;
+    }
+    .animal{
+        width: 100%;
     }
     .arrow{
         display: none;

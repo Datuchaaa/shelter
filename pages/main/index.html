@@ -10,13 +10,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="http://reactstorefronts.com/static/fonts/font-awesome/css/font-awesome.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
     <link href="http://fonts.cdnfonts.com/css/segoe-wp" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <script src="https://kit.fontawesome.com/42432c60fd.js" crossorigin="anonymous"></script>
     
     
@@ -24,7 +22,7 @@
 </head> 
 <body>
 
-    <!--   HEADER SECTION  stast -->
+    <!--   HEADER SECTION stast -->
     <section id="header-section" class="header-section" style="background-image: url(../../assets/images/start-screen-gradient-background.svg);">
         <div class="container">
             <header class="header">
@@ -105,29 +103,21 @@
             <div class="slider-details-wrapper">
 
 
-                <div class="slider-popop">
+                <div class="slider-popup" id="popup">
                     <div class="detaled-info Jennufer">
-                        <div class="arrow X-icon"><i class="fa-solid fa-xmark"></i></div>
-                        <div class="detaled-animal" style="background-image: url(../../assets/images/pets-jennifer.svg);">
+                        <div class="arrow X-icon" id="X-icon"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="detaled-animal" id="animal-img">
             
                         </div>
                         <div class="deatled-animal-bio">
-                            <h3>Jennifer</h3>
-                            <h4>Dog - Labrador</h4>
-                            <h5>Jennifer is a sweet 2 months
-                                 old Labrador that is patiently
-                                  waiting to find a new forever home.
-                                   This girl really enjoys being able
-                                    to go outside to run and play, 
-                                    but won't hesitate to play up
-                                  a storm in the house if she has al
-                                 of her favorite toys.
-                            </h5>
+                            <h3><span id="animal-name"></span></h3>
+                            <h4><span id="animal-type"></span> - <span id="animal-breed"></span></h4>
+                            <h5><span id="animal-description"></span></h5>
                             <div class="age-list">
-                                <div class="age-row"><span>Age:</span> <p> 2 months</p></div>
-                                <div class="age-row"><span>Inoculations:</span> <p> none</p></div>
-                                <div class="age-row"><span>Diseases:</span> <p> none</p></div>
-                                <div class="age-row"><span>Parasites:</span> <p> none</p></div>
+                                <div class="age-row"><span>Age:</span> <p id="animal-age"></p></div>
+                                <div class="age-row"><span>Inoculations:</span> <p id="animal-inoculations"> none</p></div>
+                                <div class="age-row"><span>Diseases:</span> <p id="animal-diseases"> none</p></div>
+                                <div class="age-row"><span>Parasites:</span> <p id="animal-parasites"> none</p></div>
                             </div>
                         </div>
                     </div>
@@ -140,38 +130,10 @@
                     are looking for a house
                 </h3>
             </div>
-            <div class="slider-animals">
+            <div class="slider-animals" id="sliderAnimalsWrapper">
                 <div class="arrow left" style="background-image: url(../../assets/icons/arrow-left.png);"></div>
-                <div class="animal-info">
-                    <div class="animal pet" style="background-image: url(../../assets/images/pets-katrine.svg);">
-                    </div>
-                    <div class="name">
-                        Katrine
-                    </div>
-                    <div class="btn lern-more">
-                        Learn more
-                    </div>
-                </div>
-                <div class="animal-info">
-                    <div class="animal dog-jennifer" style="background-image: url(../../assets/images/pets-jennifer.svg);">
-                    </div>
-                    <div class="name">
-                        Jennufer
-                    </div>
-                    <div class="btn lern-more">
-                        Learn more
-                    </div>
-                </div>
-                <div class="animal-info">
-                    <div class="animal dog-woody" style="background-image: url(../../assets/images/pets-woody.svg);">
-                    </div>
-                    <div class="name">
-                        Woody
-                    </div>
-                    <div class="btn lern-more">
-                        Learn more
-                    </div>
-                </div>
+               
+               
                 <div class="arrow right" style="background-image: url(../../assets/icons/button_arrow.png);"></div>
             </div>
             <div class="btn-center">
@@ -312,10 +274,18 @@
      <!--footer section end-->
 
 
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
 
-
-
-
+     
      <script src="script.js"></script>
+
+     
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+     <script type="text/javascript">
+        
+     </script>
 
 </body>
