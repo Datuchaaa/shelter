@@ -308,6 +308,19 @@ h3 {
     justify-content: center;
     align-items: center;
 }
+.age-list{
+    display:grid;
+    
+
+}
+.age-row{
+    display: flex;
+    align-items: center;
+}
+.age-row p {
+    padding-left: 10px;
+    color: #7c7c7c;
+}
 .detaled-info{
     display: flex;
     left: 15%;
