@@ -80,6 +80,17 @@ fetch('./pets.json') //path to the file with json data
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
+                responsive: [
+                    {
+                      breakpoint: 768,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        // dots: true
+                      }
+                    }],
+                    
                 prevArrow: ' <div class="arrow left" style="background-image: url(../../assets/icons/arrow-left.png);"></div>',
                 nextArrow: '<div class="arrow right" style="background-image: url(../../assets/icons/button_arrow.png);"></div>'
               });
